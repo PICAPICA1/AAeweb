@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>琴棋书画</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <!-- <div class="logo">琴棋书画</div> -->
+            <div class="white-bg"></div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="underline">首页</a></li>
+                    <li class="qin">
+                        <a href="#" class="underline">天地之声·琴</a>
+                    </li>
+                    <li class="qi">
+                        <a href="#" class="underline">阴阳之道·棋</a>
+                    </li>
+                    <li class="shu">
+                        <a href="#" class="underline">心画之境·书</a>
+                    </li>
+                    <li class="hua">
+                        <a href="#" class="underline">造化之工·画</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="submenu">
+            <div class="menu submenu-qin" data-menu="qin">
+                <a href="#">历史脉络</a>
+                <a href="#">传世名曲</a>
+                <a href="#">琴学思想</a>
+                <a href="#">琴韵心声</a>
+            </div>
+            <div class="menu submenu-qi" data-menu="qi">
+                <a href="#">历史脉络</a>
+                <a href="#">传世名曲</a>
+                <a href="#">琴学思想</a>
+
+            </div>
+            <div class="menu submenu-shu" data-menu="shu">
+                <a href="#">历史脉络</a>
+                <a href="#">传世名曲</a>
+            </div>
+            <div class="menu submenu-hua" data-menu="hua">
+                <a href="#">历史脉络</a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="swiper-main">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide screen1">
+                <div class="banner">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/banner1-guqin.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/banner2-qi.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/banner3-shu.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/banner4-hua.jpg" alt=""></div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                        <!-- 如果需要导航按钮 -->
+                        <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+                        <!-- 如果需要滚动条 -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide screen2">
+                <div class="main">
+                    <div class="container">
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide screen3">Slide 3</div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/menu.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+
+        var mySwipermain = new Swiper('.swiper-main', {
+            direction: 'vertical', // 垂直切换选项
+            mousewheel: true, // 如果有这一行，请注意是否影响了页面滚动
+            on: {
+                slideChange: function () {
+                    const whiteBgElements = document.querySelectorAll('.white-bg');
+                    const isOnFirstSlide = this.activeIndex === 0;
+                    const header = document.querySelector('.site-header');
+                    const submenu = document.querySelector('.submenu');
+
+
+                    whiteBgElements.forEach(el => {
+                        el.style.top = isOnFirstSlide ? '-70px' : '0';
+                    });
+
+                    if (this.activeIndex === 0) {
+                        // 第一页：深色主题
+                        header.classList.add('dark-nav');
+                        header.classList.remove('white-nav');
+
+                        submenu.classList.remove('white-bg');
+                        submenu.classList.add('dark-menu');
+                        submenu.classList.remove('white-menu');
+                    } else {
+                        // 其它页面：白色主题
+                        header.classList.add('white-nav');
+                        header.classList.remove('dark-nav');
+
+
+                        submenu.classList.add('white-bg', 'white-menu');
+                        submenu.classList.remove('dark-menu');
+                    }
+                }
+            }
+        })
+
+
+
+
+        var mySwiper = new Swiper('.swiper', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        })
+
+    </script>
+</body>
+
+</html>
