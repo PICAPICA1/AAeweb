@@ -1,21 +1,34 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-body, html {
-    overflow: hidden;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.swiper-main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #fff7ec;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
 }
