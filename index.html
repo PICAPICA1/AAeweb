@@ -1,258 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>琴棋书画</title>
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/screen1.css" />
-    <link rel="stylesheet" href="./css/screen2.css" />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-  </head>
 
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <!-- <div class="logo">琴棋书画</div> -->
-        <div class="white-bg"></div>
-        <nav>
-          <ul>
-            <li><a href="#home" class="underline">首页</a></li>
-            <li class="qin">
-              <a href="#" class="underline">天地之声·琴</a>
-            </li>
-            <li class="qi">
-              <a href="#" class="underline">阴阳之道·棋</a>
-            </li>
-            <li class="shu">
-              <a href="#" class="underline">心画之境·书</a>
-            </li>
-            <li class="hua">
-              <a href="#" class="underline">造化之工·画</a>
-            </li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>琴棋书画</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/screen1.css" />
+  <link rel="stylesheet" href="./css/screen2.css" />
+  <link rel="stylesheet" href="./css/screen3.css" />
+  <link rel="stylesheet" href="./css/screen4.css" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <!-- <div class="logo">琴棋书画</div> -->
+      <div class="white-bg"></div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="underline active">首页</a></li>
+          <li class="qin">
+            <a href="./html/qin.html" class="underline">天地之声·琴</a>
+          </li>
+          <li class="qi">
+            <a href="./html/qi.html" class="underline">阴阳之道·棋</a>
+          </li>
+          <li class="shu">
+            <a href="./html/shu.html" class="underline">心画之境·书</a>
+          </li>
+          <li class="hua">
+            <a href="./html/hua.html" class="underline">造化之工·画</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="submenu">
+      <div class="menu submenu-qin" data-menu="qin">
+        <a href="#">历史脉络</a>
+        <a href="#">传世名曲</a>
+        <a href="#">琴学思想</a>
+        <a href="#">琴韵心声</a>
       </div>
-      <div class="submenu">
-        <div class="menu submenu-qin" data-menu="qin">
-          <a href="#">历史脉络</a>
-          <a href="#">传世名曲</a>
-          <a href="#">琴学思想</a>
-          <a href="#">琴韵心声</a>
-        </div>
-        <div class="menu submenu-qi" data-menu="qi">
-          <a href="#">历史脉络</a>
-          <a href="#">传世名曲</a>
-          <a href="#">琴学思想</a>
-        </div>
-        <div class="menu submenu-shu" data-menu="shu">
-          <a href="#">历史脉络</a>
-          <a href="#">传世名曲</a>
-        </div>
-        <div class="menu submenu-hua" data-menu="hua">
-          <a href="#">历史脉络</a>
-        </div>
+      <div class="menu submenu-qi" data-menu="qi">
+        <a href="#">历史脉络</a>
+        <a href="#">传世名曲</a>
+        <a href="#">琴学思想</a>
       </div>
-    </header>
-
-    <div class="swiper-main">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide screen1">
-          <div class="banner">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/banner1-guqin.jpeg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/banner2-qi.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/banner3-shu.jpg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/banner4-hua.jpg" alt="" />
-                </div>
-              </div>
-              <!-- 如果需要分页器 -->
-              <!-- <div class="swiper-pagination"></div> -->
-
-              <!-- 如果需要导航按钮 -->
-              <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-
-              <!-- 如果需要滚动条 -->
-              <!-- <div class="swiper-scrollbar"></div> -->
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide screen2">
-          <div class="main">
-            <div class="container">
-              <!-- 左侧区域 -->
-              <div class="left-section">
-                <div class="characters-container animate-characters">
-                  <div class="character-item" id="qin-item">
-                    <img src="images/qin.png" alt="琴" class="character-img" />
-                    <img src="images/琴.png" alt="琴图标" class="icon-img" />
-                  </div>
-                  <div class="character-item" id="qi-item">
-                    <img src="images/qi.png" alt="棋" class="character-img" />
-                    <img src="images/棋.png" alt="棋图标" class="icon-img" />
-                  </div>
-                  <div class="character-item" id="shu-item">
-                    <img src="images/shu.png" alt="书" class="character-img" />
-                    <img src="images/书.png" alt="书图标" class="icon-img" />
-                  </div>
-                  <div class="character-item" id="hua-item">
-                    <img src="images/hua.png" alt="画" class="character-img" />
-                    <img src="images/画.png" alt="画图标" class="icon-img" />
-                  </div>
-                </div>
-              </div>
-
-              <!-- 右侧区域 -->
-              <div class="right-section">
-                <div class="image-grid">
-                  <div
-                    class="grid-item"
-                    onmouseover="highlightItem('qin')"
-                    onmouseout="unhighlightItem('qin')"
-                  >
-                    <img
-                      src="images/banner1-guqin.jpeg"
-                      alt="弹琴"
-                      class="grid-img"
-                    />
-                  </div>
-                  <div
-                    class="grid-item"
-                    onmouseover="highlightItem('qi')"
-                    onmouseout="unhighlightItem('qi')"
-                  >
-                    <img
-                      src="images/banner2-qi.png"
-                      alt="下棋"
-                      class="grid-img"
-                    />
-                  </div>
-                  <div
-                    class="grid-item"
-                    onmouseover="highlightItem('shu')"
-                    onmouseout="unhighlightItem('shu')"
-                  >
-                    <img
-                      src="images/banner3-shu.jpg"
-                      alt="看书"
-                      class="grid-img"
-                    />
-                  </div>
-                  <div
-                    class="grid-item"
-                    onmouseover="highlightItem('hua')"
-                    onmouseout="unhighlightItem('hua')"
-                  >
-                    <img
-                      src="images/banner4-hua.jpg"
-                      alt="绘画"
-                      class="grid-img"
-                    />
-                  </div>
-                </div>
-
-                <img src="images/花.png" alt="梅花" class="plum-blossom" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide screen3">
-          <div class="main">
-            <div class="container">
-              <div><img src="./images/screen3.png" alt="" /></div>
-            </div>
-          </div>
-        </div>
+      <div class="menu submenu-shu" data-menu="shu">
+        <a href="./html/shu.html#first">字体演变</a>
+        <a href="#">书法体系</a>
+        <a href="#">笔墨密码</a>
+        <a href="#">书道新解</a>
+      </div>
+      <div class="menu submenu-hua" data-menu="hua">
+        <a href="#">历史脉络</a>
       </div>
     </div>
+  </header>
+  <div class="wrap">
+    <div class="main-content">
+      <section class="home">
+        <div class="bottomBtn">
+          <a href="javascript:;">
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="swiper-main swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide screen1">
+              <div class="banner">
+                <div class="swiper banner1-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./images/banner4-hua.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/banner2-qi.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/banner3-shu.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/banner1-guqin.jpeg" alt="" />
+                    </div>
+                  </div>
+                  <!-- 如果需要分页器 -->
+                  <!-- <div class="swiper-pagination"></div> -->
 
-    <script src="./js/menu.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script>
-      // 高亮对应的左侧项目
-      function highlightItem(type) {
-        document.getElementById(`${type}-item`).classList.add("highlight");
-      }
+                  <!-- 如果需要导航按钮 -->
+                  <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
 
-      function unhighlightItem(type) {
-        document.getElementById(`${type}-item`).classList.remove("highlight");
-      }
+                  <!-- 如果需要滚动条 -->
+                  <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide screen2">
+              <div class="main">
+                <div class="container">
+                  <!-- 左侧区域 -->
+                  <div class="left-section">
+                    <div class="characters-container animate-characters">
+                      <div class="character-item" id="qin-item">
+                        <img src="images/qin.png" alt="琴" class="character-img" />
+                        <img src="images/琴.png" alt="琴图标" class="icon-img" />
+                      </div>
+                      <div class="character-item" id="qi-item">
+                        <img src="images/qi.png" alt="棋" class="character-img" />
+                        <img src="images/棋.png" alt="棋图标" class="icon-img" />
+                      </div>
+                      <div class="character-item" id="shu-item">
+                        <img src="images/shu.png" alt="书" class="character-img" />
+                        <img src="images/书.png" alt="书图标" class="icon-img" />
+                      </div>
+                      <div class="character-item" id="hua-item">
+                        <img src="images/hua.png" alt="画" class="character-img" />
+                        <img src="images/画.png" alt="画图标" class="icon-img" />
+                      </div>
+                    </div>
+                  </div>
 
-      // 重置动画函数
-      function resetAnimations() {
-        const charactersContainer = document.querySelector(
-          ".characters-container"
-        );
-        const plumBlossom = document.querySelector(".plum-blossom");
+                  <!-- 右侧区域 -->
+                  <div class="right-section">
+                    <div class="image-grid">
+                      <div class="grid-item" onmouseover="highlightItem('qin')" onmouseout="unhighlightItem('qin')">
+                        <img src="images/banner1-guqin.jpeg" alt="弹琴" class="grid-img" />
+                      </div>
+                      <div class="grid-item" onmouseover="highlightItem('qi')" onmouseout="unhighlightItem('qi')">
+                        <img src="images/banner2-qi.png" alt="下棋" class="grid-img" />
+                      </div>
+                      <div class="grid-item" onmouseover="highlightItem('shu')" onmouseout="unhighlightItem('shu')">
+                        <img src="images/banner3-shu.jpg" alt="看书" class="grid-img" />
+                      </div>
+                      <div class="grid-item" onmouseover="highlightItem('hua')" onmouseout="unhighlightItem('hua')">
+                        <img src="images/banner4-hua.jpg" alt="绘画" class="grid-img" />
+                      </div>
+                    </div>
 
-        // 添加重置类
-        charactersContainer.classList.add("reset-animation");
-        plumBlossom.classList.add("reset-animation");
+                    <img src="images/花.png" alt="梅花" class="plum-blossom" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide screen3">
+              <div class="main">
+                <div class="container">
+                  <div>
+                    <img src="./images/screen3.png" alt="" class="flip-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide screen4">
+              <div class="main">
+                <div class="swiper banner2-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="screen4-content">
+                        <div class="screen4-text">
+                          <div class="screen4-title">吴清源</div>
+                          <div class="screen4-desc">
+                            原名吴泉，1914年出生于福建省福州市的名门望族。他是著名的围棋大师，
+                            被誉为“围棋神童”<br />
+                            14岁时便东渡日本开始职业生涯。吴清源在1933年以19岁之龄运用自创
+                            的“新布局”对阵本因坊秀哉，开创了围棋史上的新篇章。他曾加入日本国
+                            籍，并在围棋界享有极高的声誉，被称为“昭和棋圣”。<br />
+                            吴清源不仅在围棋技艺上有卓越贡献，
+                            还致力于推动围棋的国际化和中国围棋的发展。
+                          </div>
+                        </div>
+                        <div class="screen4-img-box">
+                          <img src="./images/棋吴清源.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="screen4-content">
+                        <div class="screen4-text">
+                          <div class="screen4-title">欧阳询</div>
+                          <div class="screen4-desc">
+                            原名吴泉，1914年出生于福建省福州市的名门望族。他是著名的围棋大师，
+                            被誉为“围棋神童”<br />
+                            14岁时便东渡日本开始职业生涯。吴清源在1933年以19岁之龄运用自创
+                            的“新布局”对阵本因坊秀哉，开创了围棋史上的新篇章。他曾加入日本国
+                            籍，并在围棋界享有极高的声誉，被称为“昭和棋圣”。<br />
+                            吴清源不仅在围棋技艺上有卓越贡献，
+                            还致力于推动围棋的国际化和中国围棋的发展。
+                          </div>
+                        </div>
+                        <div class="screen4-img-box">
+                          <img src="./images/书欧阳询.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="screen4-content">
+                        <div class="screen4-text">
+                          <div class="screen4-title">嵇康</div>
+                          <div class="screen4-desc">
+                            原名吴泉，1914年出生于福建省福州市的名门望族。他是著名的围棋大师，
+                            被誉为“围棋神童”<br />
+                            14岁时便东渡日本开始职业生涯。吴清源在1933年以19岁之龄运用自创
+                            的“新布局”对阵本因坊秀哉，开创了围棋史上的新篇章。他曾加入日本国
+                            籍，并在围棋界享有极高的声誉，被称为“昭和棋圣”。<br />
+                            吴清源不仅在围棋技艺上有卓越贡献，
+                            还致力于推动围棋的国际化和中国围棋的发展。
+                          </div>
+                        </div>
+                        <div class="screen4-img-box">
+                          <img src="./images/琴嵇康.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="screen4-content">
+                        <div class="screen4-text">
+                          <div class="screen4-title">张择端</div>
+                          <div class="screen4-desc">
+                            原名吴泉，1914年出生于福建省福州市的名门望族。他是著名的围棋大师，
+                            被誉为“围棋神童”<br />
+                            14岁时便东渡日本开始职业生涯。吴清源在1933年以19岁之龄运用自创
+                            的“新布局”对阵本因坊秀哉，开创了围棋史上的新篇章。他曾加入日本国
+                            籍，并在围棋界享有极高的声誉，被称为“昭和棋圣”。<br />
+                            吴清源不仅在围棋技艺上有卓越贡献，
+                            还致力于推动围棋的国际化和中国围棋的发展。
+                          </div>
+                        </div>
+                        <div class="screen4-img-box">
+                          <img src="./images/画张择端.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 如果需要分页器 -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide footer">
+              <footer class="footer slide-footer">
+                <div class="footer-logo siteMapBtn">
+                  <span>南京博物院</span>
+                </div>
+                <div class="footer-links">
+                  <div id="siteMapBtn"><a href="#">网站地图</a></div>
+                  <div><a href="#">版权声明</a></div>
+                  <div><a href="#">联系我们</a></div>
+                  <div><a href="#">平台自律公约</a></div>
+                </div>
+                <div class="footer-info">
+                  苏ICP备05090726号-1 | 公安备案号32010202010038 | © 2000 - 现在 南京博物院<br>
+                  网站建设：江苏未未数字技术有限公司
+                </div>
+              </footer>
 
-        // 强制重绘
-        void charactersContainer.offsetWidth;
-        void plumBlossom.offsetWidth;
+            </div>
+          </div>
+        </div>
+        <div class="toTop">
+          <img src="./images/toTop.svg" alt="" />
+        </div>
+      </section>
+      <!-- 左下角菱形展开按钮组，参考结构调整
+      <div class="research-nav visible-lg visible-md diamond-menu-nav">
+      <div class="research-list">
+        <p class="menu-item"><a href="#">出版</a></p>
+        <p class="menu-item"><a href="#">基地</a></p>
+        <p class="menu-item"><a href="#">活动</a></p>
+        <p class="menu-item"><a href="#">成果</a></p>
+        <p class="menu-item"><a href="#">项目</a></p>
+        <p class="menu-item"><a href="#">机构</a></p>
+      </div>
+      <h2 id="researchNav">
+        <span><a href="javascript:;">科研</a></span>
+      </h2>
+    </div> -->
+    </div>
+  </div>
 
-        // 移除重置类并添加动画类
-        charactersContainer.classList.remove("reset-animation");
-        plumBlossom.classList.remove("reset-animation");
 
-        charactersContainer.classList.add("animate-characters");
-        plumBlossom.classList.add("animate-plum");
-      }
+  <div id="siteMapModal" class="site-map-modal" style="display:none;">
+    <div class="site-map-content" id="siteMapContent">
+      <span class="close-btn" id="closeSiteMap">&times;</span>
+      <div class="site-map-columns">
+        <div class="site-map-col">
+          <h4>首页</h4>
+          <a href="#">首页</a>
+        </div>
+        <div class="site-map-col">
+          <h4>参观</h4>
+          <a href="#">开放时间</a>
+          <a href="#">导览地图</a>
+          <!-- ... -->
+        </div>
+        <!-- 更多栏目 ... -->
+      </div>
+    </div>
+  </div>
 
-      var mySwipermain = new Swiper(".swiper-main", {
-        direction: "vertical", // 垂直切换选项
-        mousewheel: true, // 如果有这一行，请注意是否影响了页面滚动
-        on: {
-          slideChange: function () {
-            const whiteBgElements = document.querySelectorAll(".white-bg");
-            const isOnFirstSlide = this.activeIndex === 0;
-            const header = document.querySelector(".site-header");
-            const submenu = document.querySelector(".submenu");
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/screen2.js"></script>
 
-            whiteBgElements.forEach((el) => {
-              el.style.top = isOnFirstSlide ? "-70px" : "0";
-            });
 
-            if (this.activeIndex === 0) {
-              // 第一页：深色主题
-              header.classList.add("dark-nav");
-              header.classList.remove("white-nav");
+</body>
 
-              submenu.classList.remove("white-bg");
-              submenu.classList.add("dark-menu");
-              submenu.classList.remove("white-menu");
-            } else {
-              // 其它页面：白色主题
-              header.classList.add("white-nav");
-              header.classList.remove("dark-nav");
-
-              submenu.classList.add("white-bg", "white-menu");
-              submenu.classList.remove("dark-menu");
-            }
-          },
-        },
-      });
-
-      var mySwiper = new Swiper(".swiper", {
-        direction: "horizontal", // 垂直切换选项
-        loop: true, // 循环模式选项
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
-  </body>
 </html>

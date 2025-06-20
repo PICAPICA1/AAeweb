@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: #494949;
+}
+
+/* body,
+html {
+  background-color: #fff7ec;
+} */
+
+section {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.banner {
+  margin-top: 300px;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-indent: 2em;
+  text-align: justify;
+  /* height: 300px; */
+}
+
+#banner-text {
+  width: 500px;
+  line-height: 30px;
+}
+
+.content-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content-title div {
+  height: 50px;
+  margin: 0 50px;
+}
+
+.content-title div img {
+  object-fit: contain;
+}
+
+
+
+/* 字体演变三栏结构样式 */
+.font-evolution-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.font-evolution-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 120px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #8c7b6a;
+  margin-right: 20px;
+  gap: 125px;
+}
+.font-evolution-stage {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.font-evolution-line {
+  position: relative;
+  width: 2px;
+  background: #d6c7b0;
+  height: 592px;
+  margin: 0 30px;
+  border-radius: 1px;
+}
+.font-evolution-line .dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: #d6c7b0;
+  border-radius: 50%;
+  border: 2px solid #b8a083;
+  box-sizing: border-box;
+}
+.font-evolution-right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 600px;
+  color: #494949;
+  font-size: 16px;
+  line-height: 2;
+  text-align: justify;
+  text-indent: 2em;
+}
+.font-evolution-detail {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .font-evolution-flex { flex-direction: column; align-items: stretch; }
+  .font-evolution-left, .font-evolution-right { width: 100%; align-items: flex-start; }
+  .font-evolution-line { display: none; }
+}
+
+/* 书法体系三栏卡片结构样式 */
+.calligraphy-cards-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 60px 0 80px 0;
+}
+.calligraphy-card {
+  background: #ededed;
+  /* border-radius: 6px; */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  width: 310px;
+  min-height: 420px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 18px 16px 18px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s;
+}
+.calligraphy-card:nth-child(2) {
+  background: #bdbdbd;
+}
+.calligraphy-card:nth-child(3) {
+  background: #444;
+  color: #fff;
+}
+.calligraphy-img {
+  width: 100%;
+  height: min-content;
+  object-fit: contain;
+  margin-bottom: 18px;
+  border-radius: 2px;
+}
+.calligraphy-card-text {
+  font-size: 15px;
+  line-height: 2;
+  text-align: justify;
+  color: inherit;
+}
+@media (max-width: 900px) {
+  .calligraphy-cards-flex { flex-direction: column; align-items: center; gap: 24px; }
+  .calligraphy-card { width: 90vw; min-width: 0; }
+}
+
+/* 书道新解三栏结构样式 */
+.calligraphy-innovation-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  margin: 60px 0 80px 0;
+}
+.calligraphy-innovation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+.calligraphy-innovation-img {
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.calligraphy-innovation-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  color: #222;
+  text-align: center;
+}
+.calligraphy-innovation-desc {
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  margin-bottom: 2px;
+}
+@media (max-width: 900px) {
+  .calligraphy-innovation-flex { flex-direction: column; align-items: center; gap: 32px; }
+  .calligraphy-innovation-item { width: 90vw; }
+  .calligraphy-innovation-img { width: 100%; }
+}
+

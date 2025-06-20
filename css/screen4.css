@@ -1,0 +1,85 @@
+.screen4 .main {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/screen4.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.screen4-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px 40px 80px;
+  justify-content: space-between;
+}
+.screen4-text {
+  color: #f0e6d8;
+  max-width: 50%;
+  font-size: 1.2rem;
+}
+.screen4-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.screen4-desc {
+  line-height: 2;
+  font-size: 1.1rem;
+}
+.screen4-img-box {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  background: #fff;
+  padding: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+.screen4-img-box img {
+  max-width: 340px;
+  max-height: 380px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .screen4-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 10px;
+  }
+  .screen4-text {
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+  .screen4-img-box {
+    margin: 0 auto;
+  }
+}
+
+.screen4 .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.screen4 .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
